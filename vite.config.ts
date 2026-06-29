@@ -5,6 +5,7 @@ export default defineConfig({
     "*": "vp check --fix",
   },
   pack: {
+    entry: ["src/index.ts", "src/lint.ts", "src/fmt.ts"],
     dts: {
       tsgo: true,
     },

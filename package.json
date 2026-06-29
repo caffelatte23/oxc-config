@@ -3,14 +3,18 @@
   "version": "0.0.1",
   "description": "caffelatte's oxc config",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caffelatte23/oxc-config.git"
+  },
   "files": [
     "dist"
   ],
   "type": "module",
   "exports": {
     ".": "./dist/index.mjs",
-    "./lint": "./dist/lint.mjs",
     "./fmt": "./dist/fmt.mjs",
+    "./lint": "./dist/lint.mjs",
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -38,11 +42,5 @@
     "oxfmt": ">=0.55.0",
     "oxlint": ">=1.70.0"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.9.0",
-      "onFail": "download"
-    }
-  }
+  "packageManager": "pnpm@10.34.4"
 }

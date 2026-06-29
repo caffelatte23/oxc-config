@@ -7,7 +7,7 @@ import { defineConfig as defineFmt } from "../src/fmt.ts";
 
 test("lint: default plugins are set", () => {
   const config = defineLint();
-  expect(config.plugins).toEqual(["eslint", "import", "react", "typescript"]);
+  expect(config.plugins).toEqual(["eslint", "import", "typescript"]);
 });
 
 test("lint: user config is passed via extends", () => {
